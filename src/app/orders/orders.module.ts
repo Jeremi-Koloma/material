@@ -5,6 +5,10 @@ import { OrdersRoutingModule } from './orders-routing.module';
 import { OrdersListComponent } from './orders-list/orders-list.component';
 import { Routes } from '@angular/router';
 
+// Material components
+import { MatTabsModule } from '@angular/material/tabs';
+
+
 const routes: Routes = [
   { path: '', component: OrdersListComponent }
 ]
@@ -15,7 +19,9 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    OrdersRoutingModule
+    OrdersRoutingModule,
+    // Material
+    MatTabsModule
   ]
 })
 export class OrdersModule { }

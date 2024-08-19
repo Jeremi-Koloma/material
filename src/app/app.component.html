@@ -8,10 +8,10 @@
   <!-- LE CONTENU -->
   <div class="sidenav-content">
 
-    <!-- APP-BAR-->
+    <!-- APP-BAR -->
     <mat-toolbar color="primary">
       <mat-toolbar-row>
-        <!-- ICON BOUUTTON MENU-->
+        <!-- ICON BOUTTON TOGGLE MENU -->
         <button mat-icon-button (click)="drawer.toggle()">
           <mat-icon>menu</mat-icon>
         </button>
@@ -20,6 +20,29 @@
         <span class="spacer"></span>
 
         <mat-icon>favorite</mat-icon>
+
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+
+        <!-- MENU ICON  -->
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>publish</mat-icon>
+            <span>Share</span>
+          </button>
+
+          <button mat-menu-item disabled>
+            <mat-icon>mode_comment</mat-icon>
+            <span>Comment</span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
+
       </mat-toolbar-row>
     </mat-toolbar>
 

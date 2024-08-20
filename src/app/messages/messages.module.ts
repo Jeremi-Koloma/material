@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MessagesRoutingModule } from './messages-routing.module';
 import { MessagesListComponent } from './messages-list/messages-list.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: MessagesListComponent }
@@ -15,6 +15,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    RouterModule.forChild(routes),
     MessagesRoutingModule
   ]
 })

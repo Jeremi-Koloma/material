@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { CustomersRoutingModule } from './customers-routing.module';
 import { CustomersListComponent } from './customers-list/customers-list.component';
-import { Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   { path: '', component: CustomersListComponent }
@@ -15,6 +15,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
+    RouterModule.forChild(routes),
     CustomersRoutingModule
   ]
 })

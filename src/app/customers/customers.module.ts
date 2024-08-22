@@ -6,6 +6,7 @@ import { CustomersListComponent } from './customers-list/customers-list.componen
 import { RouterModule, Routes } from '@angular/router';
 import { CustomerCardComponent } from './customer-card/customer-card.component';
 import { CustomerNewComponent } from './customer-new/customer-new.component';
+import { RepDialogComponent } from './rep-dialog/rep-dialog.component';
 
 // Material
 import { MatButtonModule } from '@angular/material/button';
@@ -13,6 +14,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatRadioModule } from '@angular/material/radio';
 
 // Forms
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -29,7 +32,8 @@ const routes: Routes = [
   declarations: [
     CustomersListComponent,
     CustomerCardComponent,
-    CustomerNewComponent
+    CustomerNewComponent,
+    RepDialogComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +47,14 @@ const routes: Routes = [
     MatCardModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule,
+    MatRadioModule
+  ],
+
+  // Dialog 
+  entryComponents: [
+    RepDialogComponent
   ]
 })
 export class CustomersModule { }

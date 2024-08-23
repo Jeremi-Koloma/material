@@ -17,6 +17,10 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 const routes: Routes = [
@@ -43,7 +47,11 @@ const routes: Routes = [
     MatDatepickerModule,
     MatIconModule,
     MatInputModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    MatTableModule,
+    MatSortModule,
+    MatCheckboxModule,
+    MatPaginatorModule 
   ]
 })
 export class OrdersModule { }

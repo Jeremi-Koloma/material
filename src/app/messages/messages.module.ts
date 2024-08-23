@@ -16,6 +16,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatIconModule } from '@angular/material/icon';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 // Routes for messages
@@ -43,7 +44,7 @@ const routes: Routes = [
     MatIconModule,
     MatInputModule,
     MatStepperModule,
-
+    MatTooltipModule
   ]
 })
 export class MessagesModule { }

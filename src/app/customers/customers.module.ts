@@ -16,6 +16,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 // Forms
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -49,7 +50,8 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSnackBarModule
   ],
 
   // Dialog 
